@@ -1,0 +1,15 @@
+{
+ "v": 1,
+ "repo": "sjgant80-hub/attractor",
+ "sha": "a2e150d2d88727abdfd1b329b6091317ffffa98f",
+ "tier": "proven",
+ "score": 1,
+ "killed": 20,
+ "survived": 0,
+ "baselined": 8,
+ "checker": "witness@v0.6",
+ "at": 1787834552346,
+ "expiresAt": 1790426552346,
+ "sig": "NEmXwTMC/1N/6Pdjbs7lJl4mApB2kEdLLTJtYu6bXk0QB06vYUk2nuY1HtciNIqBWPytWQ4d0fXXJNYiiwisBQ==",
+ "source": "nearly-survey 2026-08-27, CI green"
+}

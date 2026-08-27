@@ -1,0 +1,19 @@
+name: proof-of-play
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - name: the verdict law + the signer against their falsifiable examples
+        run: node --test verdict.test.mjs signer.test.mjs
+      # ⚑ Pinned. An unpinned gate is a gate somebody else can change.
+      - name: witness — try to break the verdict law, then READ the verdict (must be CLEAN)
+        run: |
+          git clone --depth 1 --branch v0.6 https://github.com/sjgant80-hub/witness.git /tmp/witness
+          node /tmp/witness/witness.mjs mutate verdict.mjs \
+            --timeout 60000 --cap 600 \
+            --test node --test verdict.test.mjs | tee wverdict.txt
+          grep -q '"clean": true' wverdict.txt || { echo "::error::mutants survived — the gate is not clean"; exit 1; }

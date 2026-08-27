@@ -1,0 +1,15 @@
+{
+ "v": 1,
+ "repo": "sjgant80-hub/fallgarden",
+ "sha": "9cbd3400bbb72782c8a6beffa5011b1f76f4dea0",
+ "tier": "proven",
+ "score": 1,
+ "killed": 9,
+ "survived": 0,
+ "baselined": 0,
+ "checker": "witness@v0.6",
+ "at": 1787834552346,
+ "expiresAt": 1790426552346,
+ "sig": "P+Vj5YlKonRzfu5Dw11m0a7kADdaBCpSwjGZTGmnib6qAM1l6fw0cUq7B3DYwYg4Wq/BDrFkdZMiLPf3rlNZDQ==",
+ "source": "konomify-in-place 2026-08-27, CI green"
+}

@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>THE PROVEN WEB · a registry where software re-proves itself</title>
+<style>
+:root{--bg:#0d1117;--card:#161b22;--line:#30363d;--ink:#e6edf3;--soft:#8b949e;--green:#2da44e;--gold:#c9a24a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,"Segoe UI",sans-serif;padding:0 16px 60px}
+header{max-width:900px;margin:40px auto 8px}h1{font-size:2rem;margin:0}h1 span{color:var(--gold)}
+.sub{color:var(--soft);max-width:900px;margin:6px auto 26px}
+.wire{max-width:900px;margin:0 auto 30px;border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;padding:12px 16px;color:var(--soft);font-size:.92rem}
+.grid{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(400px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.name{color:var(--ink);font-weight:700;text-decoration:none;font-size:1.05rem}.name:hover{color:var(--gold)}
+.facts{color:var(--soft);font-size:.85rem;margin-top:6px}.src{font-style:italic}
+code{background:#21262d;padding:1px 5px;border-radius:4px;font-size:.85em}
+details{margin-top:8px}summary{color:var(--gold);cursor:pointer;font-size:.85rem}
+pre{overflow-x:auto;background:#0d1117;border:1px solid var(--line);border-radius:6px;padding:10px;font-size:.75rem}
+h2{max-width:900px;margin:38px auto 10px;font-size:1.15rem}
+.obs{max-width:900px;margin:0 auto;color:var(--soft);font-size:.85rem;line-height:2}
+.obs span{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:2px 8px;margin-right:6px;white-space:nowrap}
+footer{max-width:900px;margin:44px auto 0;color:var(--soft);font-size:.8rem;border-top:1px solid var(--line);padding-top:14px}
+a{color:var(--gold)}
+</style></head><body>
+<header><h1>THE PROVEN WEB <span>◦</span></h1></header>
+<p class="sub"><b>A registry where software re-proves itself.</b> Every badge below is derived from a mutation-gate run — mutants injected into the code, the tests made to kill them — signed by the registry's Ed25519 key, and <b>it expires</b>. A badge that cannot fail is not a badge. A tier is never accepted from a repo's own claim; it is computed from the kill counts.</p>
+<div class="wire"><b>The honest wire:</b> 14 signed verdicts below were issued from gate runs the registry witnessed, each naming its source, sha, checker and expiry. The 81 repos in the observed list are proven on the estate ladder (mutation gate green on GitHub's runners) but hold no signed verdict yet — they await their first registry-witnessed re-sit. Nothing here is self-reported. Verify any verdict yourself: the <a href="registry-pub.json">public key</a> and every <a href="https://github.com/sjgant80-hub/proven-web">signed record</a> are in the open.</div>
+<div class="grid"><div class="card"><div class="row"><a class="name" href="https://github.com/sjgant80-hub/airgap">airgap</a><img src="badges/airgap.svg" alt="verdict"></div>
+<div class="facts">17 mutants killed · 0 survived · 3 argued equivalents · <code>witness@v0.6</code></div>
+<div class="facts">sha <code>af75cb8b0d7a</code> · expires in 30d · <span class="src">codec hardening 2026-08-27 (mesh law), CI green</span></div>
+<details><summary>the signed verdict</summary><pre>{
+ "v": 1,
+ "repo": "sjgant80-hub/airgap",
+ "sha": "af75cb8b0d7ac1bdef396943b093e666c28b7ec5",
+ "tier": "proven",
+ "score": 1,
+ "killed": 17,
+ "survived": 0,
+ "baselined": 3,
+ "checker": "witness@v0.6",
+ "at": 1787834552346,
+ "expiresAt": 1790426552346,
+ "sig": "lnLw417fDFbp15ccKYJpOXUKADNU+p/SepWr/+bWSfiJTBqOstP6yFHmCIu2G3tPJVIV6VIpzb/xrXO53zAbAQ==",
+ "source": "codec hardening 2026-08-27 (mesh law), CI green"
+}</pre></details></div>
+<div class="card"><div class="row"><a class="name" href="https://github.com/sjgant80-hub/attractor">attractor</a><img src="badges/attractor.svg" alt="verdict"></div>
+<div class="facts">20 mutants killed · 0 survived · 8 argued equivalents · <code>witness@v0.6</code></div>
+<div class="facts">sha <code>a2e150d2d887</code> · expires in 30d · <span class="src">nearly-survey 2026-08-27, CI green</span></div>
+<details><summary>the signed verdict</summary><pre>{
+ "v": 1,
+ "repo": "sjgant80-hub/attractor",
+ "sha": "a2e150d2d88727abdfd1b329b6091317ffffa98f",
+ "tier": "proven",
+ "score": 1,
+ "killed": 20,
+ "survived": 0,
+ "baselined": 8,
+ "checker": "witness@v0.6",
+ "at": 1787834552346,
+ "expiresAt": 1790426552346,
+ "sig": "NEmXwTMC/1N/6Pdjbs7lJl4mApB2kEdLLTJtYu6bXk0QB06vYUk2nuY1HtciNIqBWPytWQ4d0fXXJNYiiwisBQ==",
+ "source": "nearly-survey 2026-08-27, CI green"
+}</pre></details></div>
+<div class="card"><div class="row"><a class="name" href="https://github.com/sjgant80-hub/fall-remember">fall-remember</a><img src="badges/fall-remember.svg" alt="verdict"></div>
+<div class="facts">23 mutants killed · 0 survived · 15 argued equivalents · <code>witness@v0.6</code></div>
+<div class="facts">sha <code>ee7c1bdabe65</code> · expires in 30d · <span class="src">hardening 2026-08-27, CI green</span></div>
+<details><summary>the signed verdict</summary><pre>{
+ "v": 1,
+ "repo": "sjgant80-hub/fall-remember",
+ "sha": "ee7c1bdabe65fcd765e26a815f62df30f0971b31",
+ "tier": "proven",
+ "score": 1,
+ "killed": 23,
+ "survived": 0,
+ "baselined": 15,
+ "checker": "witness@v0.6",
+ "at": 1787834552346,
+ "expiresAt": 1790426552346,
+ "sig": "64TQL94DyUOs0e1x0J8Il+D4iHaLgO7z8qe8PU++fZr+6eGq1LzG+2LegepRb2XI1vtBkun0Iq2hNuPcVzLPBg==",
+ "source": "hardening 2026-08-27, CI green"
+}</pre></details></div>
+<div class="card"><div class="row"><a class="name" href="https://github.com/sjgant80-hub/fallbrain">fallbrain</a><img src="badges/fallbrain.svg" alt="verdict"></div>
+<div class="facts">28 mutants killed · 0 survived · 0 argued equivalents · <code>witness@v0.6</code></div>
+<div class="facts">sha <code>80f930bc55d5</code> · expires in 30d · <span class="src">deciding law, campaign 2026-08, CI green</span></div>
+<details><summary>the signed verdict</summary><pre>{
+ "v": 1,
+ "repo": "sjgant80-hub/fallbrain",
+ "sha": "80f930bc55d5143d3b2d79924d3f1c384ee6cdcc",
+ "tier": "proven",
+ "score": 1,
+ "killed": 28,
+ "survived": 0,
+ "baselined": 0,
+ "checker": "witness@v0.6",
+ "at": 1787834552346,
+ "expiresAt": 1790426552346,
+ "sig": "Jk/oEbyAB6REsRwczFxSrsjkcEWf7x0OovVsC20GgVsFobvMbFkINHZxxJmLwSKZYsgCro16gXaAs/+FA63nCA==",
+ "source": "deciding law, campaign 2026-08, CI green"
+}</pre></details></div>
+<div class="card"><div class="row"><a class="name" href="https://github.com/sjgant80-hub/fallgarden">fallgarden</a><img src="badges/fallgarden.svg" alt="verdict"></div>
+<div class="facts">9 mutants killed · 0 survived · 0 argued equivalents · <code>witness@v0.6</code></div>
+<div class="facts">sha <code>9cbd3400bbb7</code> · expires in 30d · <span class="src">konomify-in-place 2026-08-27, CI green</span></div>
+<details><summary>the signed verdict</summary><pre>{
+ "v": 1,
+ "repo": "sjgant80-hub/fallgarden",
+ "sha": "9cbd3400bbb72782c8a6beffa5011b1f76f4dea0",
+ "tier": "proven",
+ "score": 1,
+ "killed": 9,
+ "survived": 0,
+ "baselined": 0,
+ "checker": "witness@v0.6",
+ "at": 1787834552346,
+ "expiresAt": 1790426552346,
+ "sig": "P+Vj5YlKonRzfu5Dw11m0a7kADdaBCpSwjGZTGmnib6qAM1l6fw0cUq7B3DYwYg4Wq/BDrFkdZMiLPf3rlNZDQ==",
+ "source": "konomify-in-place 2026-08-27, CI green"
+}</pre></details></div>
+<div class="card"><div class="row"><a class="name" href="https://github.com/sjgant80-hub/fallsieve">fallsieve</a><img src="badges/fallsieve.svg" alt="verdict"></div>
+<div class="facts">19 mutants killed · 0 survived · 0 argued equivalents · <code>witness@v0.6</code></div>
+<div class="facts">sha <code>d2e074945e60</code> · expires in 30d · <span class="src">FNV pin 2026-08-27, CI green</span></div>
+<details><summary>the signed verdict</summary><pre>{
+ "v": 1,
+ "repo": "sjgant80-hub/fallsieve",
+ "sha": "d2e074945e60a7f45fa6205da809aebbc1335239",
+ "tier": "proven",
+ "score": 1,
+ "killed": 19,
+ "survived": 0,
+ "baselined": 0,
+ "checker": "witness@v0.6",
+ "at": 1787834552346,
+ "expiresAt": 1790426552346,
+ "sig": "ACf/hYG8b4oiyv49dEhxCcnuWVJjiR6ItH+avbGh0n4/KXWF9xYwxbC0QGVuz5U8P/8Upc2OejyXIv5wa/LgCw==",
+ "source": "FNV pin 2026-08-27, CI green"
+}</pre></details></div>
+<div class="card"><div class="row"><a class="name" href="https://github.com/sjgant80-hub/groundlevel">groundlevel</a><img src="badges/groundlevel.svg" alt="verdict"></div>
+<div class="facts">8 mutants killed · 0 survived · 0 argued equivalents · <code>witness@v0.6</code></div>
+<div class="facts">sha <code>83294913dd89</code> · expires in 30d · <span class="src">konomify-in-place 2026-08-27 (statutory clock), CI green</span></div>
+<details><summary>the signed verdict</summary><pre>{
+ "v": 1,
+ "repo": "sjgant80-hub/groundlevel",
+ "sha": "83294913dd89eebd0c4db6907f85a0ce925a2472",
+ "tier": "proven",
+ "score": 1,
+ "killed": 8,
+ "survived": 0,
+ "baselined": 0,
+ "checker": "witness@v0.6",
+ "at": 1787834552346,
+ "expiresAt": 1790426552346,
+ "sig": "rX1VKAClAH4MQbtxhwjQCohvaYbcG4o7GUGIUM9sWwzJvHWsrrUJrFXZ3XVZPvuk8YbxFbuy4/azJ0SuO9YWDw==",
+ "source": "konomify-in-place 2026-08-27 (statutory clock), CI green"
+}</pre></details></div>
+<div class="card"><div class="row"><a class="name" href="https://github.com/sjgant80-hub/konomify">konomify</a><img src="badges/konomify.svg" alt="verdict"></div>
+<div class="facts">32 mutants killed · 0 survived · 1 argued equivalents · <code>witness@v0.6</code></div>
+<div class="facts">sha <code>c024b9c9aada</code> · expires in 30d · <span class="src">nearly-survey 2026-08-27, CI green</span></div>
+<details><summary>the signed verdict</summary><pre>{
+ "v": 1,
+ "repo": "sjgant80-hub/konomify",
+ "sha": "c024b9c9aadac2b596da28483a4859d5f62b05c1",
+ "tier": "proven",
+ "score": 1,
+ "killed": 32,
+ "survived": 0,
+ "baselined": 1,
+ "checker": "witness@v0.6",
+ "at": 1787834552346,
+ "expiresAt": 1790426552346,
+ "sig": "yqdM00YqwVfrOGX9mfBKeiZgm/4cvh/WGtIj3xe0q6BJH53PkKyl+OPl2mVvoNFHQIo3XZhh2+c1pOhunnTHAw==",
+ "source": "nearly-survey 2026-08-27, CI green"
+}</pre></details></div>
+<div class="card"><div class="row"><a class="name" href="https://github.com/sjgant80-hub/konomium-vault">konomium-vault</a><img src="badges/konomium-vault.svg" alt="verdict"></div>
+<div class="facts">85 mutants killed · 0 survived · 6 argued equivalents · <code>witness@v0.6</code></div>
+<div class="facts">sha <code>202f5abf43cc</code> · expires in 30d · <span class="src">ingest hardening 2026-08-27 (primary kernel), CI green</span></div>
+<details><summary>the signed verdict</summary><pre>{
+ "v": 1,
+ "repo": "sjgant80-hub/konomium-vault",
+ "sha": "202f5abf43cc723b72cf606e27018547dd8bd996",
+ "tier": "proven",
+ "score": 1,
+ "killed": 85,
+ "survived": 0,
+ "baselined": 6,
+ "checker": "witness@v0.6",
+ "at": 1787834552346,
+ "expiresAt": 1790426552346,
+ "sig": "bG7n54TE/bWxVxLn3dVdyOGJUpn5X1XIWr1LlH3+GePDpIE8BapOKozq9XWBDxPkKPOg+ZsILYDh/UQdFqp1Bg==",
+ "source": "ingest hardening 2026-08-27 (primary kernel), CI green"
+}</pre></details></div>
+<div class="card"><div class="row"><a class="name" href="https://github.com/sjgant80-hub/missig">missig</a><img src="badges/missig.svg" alt="verdict"></div>
+<div class="facts">17 mutants killed · 0 survived · 2 argued equivalents · <code>witness@v0.6</code></div>
+<div class="facts">sha <code>fa53e88c3817</code> · expires in 30d · <span class="src">FNV pin 2026-08-27, CI green</span></div>
+<details><summary>the signed verdict</summary><pre>{
+ "v": 1,
+ "repo": "sjgant80-hub/missig",
+ "sha": "fa53e88c38177580d44fd2fb2b0441aeaeb79730",
+ "tier": "proven",
+ "score": 1,
+ "killed": 17,
+ "survived": 0,
+ "baselined": 2,
+ "checker": "witness@v0.6",
+ "at": 1787834552346,
+ "expiresAt": 1790426552346,
+ "sig": "5/2vy6GQ66FOjdfAAq/4dBoS6k8KJFZ+6O50omYEGU09Bj7Bnm+hbdT4Y8wzEzuK7L8stBqHlt7mAZ8bZiYoCA==",
+ "source": "FNV pin 2026-08-27, CI green"
+}</pre></details></div>
+<div class="card"><div class="row"><a class="name" href="https://github.com/sjgant80-hub/niceassos">niceassos</a><img src="badges/niceassos.svg" alt="verdict"></div>
+<div class="facts">113 mutants killed · 0 survived · 1 argued equivalents · <code>witness@v0.6</code></div>
+<div class="facts">sha <code>73fc02289a6a</code> · expires in 30d · <span class="src">politePeer coercion kill 2026-08-27, CI green</span></div>
+<details><summary>the signed verdict</summary><pre>{
+ "v": 1,
+ "repo": "sjgant80-hub/niceassos",
+ "sha": "73fc02289a6a574705fcc8bdfca30aea0b105c8c",
+ "tier": "proven",
+ "score": 1,
+ "killed": 113,
+ "survived": 0,
+ "baselined": 1,
+ "checker": "witness@v0.6",
+ "at": 1787834552346,
+ "expiresAt": 1790426552346,
+ "sig": "0y9GSDJuJ6bHtNsPDWQymVgje4kq7NnOPO4kwE6S7OPvn420DRa2Fe4pgFP2wmHgVtGOnwheWhDg4XuG4SpOCw==",
+ "source": "politePeer coercion kill 2026-08-27, CI green"
+}</pre></details></div>
+<div class="card"><div class="row"><a class="name" href="https://github.com/sjgant80-hub/offramp-v2">offramp-v2</a><img src="badges/offramp-v2.svg" alt="verdict"></div>
+<div class="facts">126 mutants killed · 0 survived · 6 argued equivalents · <code>witness@v0.6</code></div>
+<div class="facts">sha <code>195f68d6377e</code> · expires in 30d · <span class="src">gate-hardening 2026-08-27, CI green</span></div>
+<details><summary>the signed verdict</summary><pre>{
+ "v": 1,
+ "repo": "sjgant80-hub/offramp-v2",
+ "sha": "195f68d6377eb04abb9aacda09489afe61904787",
+ "tier": "proven",
+ "score": 1,
+ "killed": 126,
+ "survived": 0,
+ "baselined": 6,
+ "checker": "witness@v0.6",
+ "at": 1787834552346,
+ "expiresAt": 1790426552346,
+ "sig": "rjvlQQXSvBDOvwjufB86DSA+xBvDmADxEszD63wqk0OntgeXrsFxaQV3Y8MYjPBbVzQH07PjzDF52ykdse3fBQ==",
+ "source": "gate-hardening 2026-08-27, CI green"
+}</pre></details></div>
+<div class="card"><div class="row"><a class="name" href="https://github.com/sjgant80-hub/si-didy-cascade">si-didy-cascade</a><img src="badges/si-didy-cascade.svg" alt="verdict"></div>
+<div class="facts">76 mutants killed · 0 survived · 4 argued equivalents · <code>witness@v0.6</code></div>
+<div class="facts">sha <code>965d77951040</code> · expires in 30d · <span class="src">nearly-survey 2026-08-27, CI green</span></div>
+<details><summary>the signed verdict</summary><pre>{
+ "v": 1,
+ "repo": "sjgant80-hub/si-didy-cascade",
+ "sha": "965d779510402893d3017bd44f24e758e9f3735a",
+ "tier": "proven",
+ "score": 1,
+ "killed": 76,
+ "survived": 0,
+ "baselined": 4,
+ "checker": "witness@v0.6",
+ "at": 1787834552346,
+ "expiresAt": 1790426552346,
+ "sig": "unLrNl9BKRySFzdGP7ZCYsu6caOKFWS36P7IteM51zndo3bUrI1pTMxrUl6m4iY0j3oJp6eC3pKPkXZvMnPoAQ==",
+ "source": "nearly-survey 2026-08-27, CI green"
+}</pre></details></div>
+<div class="card"><div class="row"><a class="name" href="https://github.com/sjgant80-hub/si-didy-loop">si-didy-loop</a><img src="badges/si-didy-loop.svg" alt="verdict"></div>
+<div class="facts">39 mutants killed · 0 survived · 0 argued equivalents · <code>witness@v0.6</code></div>
+<div class="facts">sha <code>740a5d44e515</code> · expires in 30d · <span class="src">twelve-crawl law 2026-08-27, CI green</span></div>
+<details><summary>the signed verdict</summary><pre>{
+ "v": 1,
+ "repo": "sjgant80-hub/si-didy-loop",
+ "sha": "740a5d44e5153c01b7edfaf1bb4ccb09980d82ec",
+ "tier": "proven",
+ "score": 1,
+ "killed": 39,
+ "survived": 0,
+ "baselined": 0,
+ "checker": "witness@v0.6",
+ "at": 1787834552346,
+ "expiresAt": 1790426552346,
+ "sig": "IFpX2b5UsUNTEdsO3t2rXyO7oM2hlfb3hpHwN4kHdOOuxuq6StfXqMA44jXkCkPECY4bVIoXtYxLHPES3w37Aw==",
+ "source": "twelve-crawl law 2026-08-27, CI green"
+}</pre></details></div></div>
+<h2>Ladder-observed · verdicts pending first re-sit (81)</h2>
+<div class="obs"><span>acg-assessor</span><span>agora</span><span>bonded-pair</span><span>didy</span><span>didy-kernels</span><span>didy-raid</span><span>divorcerbot</span><span>doggyap</span><span>earned</span><span>estate-nest</span><span>fall-graft</span><span>fall-os</span><span>fallaccount</span><span>fallbooks</span><span>fallcharter</span><span>fallclaim</span><span>fallclinic</span><span>fallcorp-demo</span><span>fallforce</span><span>fallform</span><span>fallhardened</span><span>fallherd</span><span>fallhire</span><span>fallhr</span><span>fallineage</span><span>fallinsurance</span><span>fallinvoice</span><span>falljurisdiction</span><span>falljustice</span><span>fallkard</span><span>fallkard-forge</span><span>fallledger</span><span>falllegal</span><span>falllist</span><span>fallpractice</span><span>fallrecruit</span><span>fallscrub</span><span>fallseed-accountancy</span><span>fallseed-claims</span><span>fallseed-clinic</span><span>fallseed-estate</span><span>fallseed-hr</span><span>fallseed-ifa</span><span>fallseed-insurance</span><span>fallseed-law</span><span>fallseed-mortgage</span><span>fallseed-recruit</span><span>fallseed-vet</span><span>fallslot</span><span>fallvet</span><span>fallworld</span><span>foldsig</span><span>generative-estate</span><span>golden-placer</span><span>hum</span><span>integration-engine</span><span>konomesh</span><span>konomi-ablate</span><span>konomi-canary</span><span>konomi-clean</span><span>konomi-export</span><span>konomi-judge</span><span>konomi-meter</span><span>konomi-redteam</span><span>konomi-regress</span><span>konomi-retest</span><span>konomi-rubric</span><span>openkonomi</span><span>proof-of-play</span><span>recollapse</span><span>redress-engine</span><span>ring-assessor</span><span>soundcheck</span><span>sovereign-browser</span><span>the-dreamer</span><span>the-ear</span><span>the-oracle</span><span>ui-gate</span><span>wishwood</span><span>wishwood-keeper</span><span>witness</span></div>
+<footer>Verification: fetch a verdict JSON, rebuild its canonical string (fields in schema order joined with |), verify the Ed25519 signature against <a href="registry-pub.json">registry-pub.json</a>, and check <code>expiresAt</code>. The verdict law itself is mutation-gated (25/25) in this repo. · Konomi Architecture — created by Thomas Frumkin · <a href="https://konomi-systems.com">konomi-systems.com</a> · built by <a href="https://www.ai-nativesolutions.com">AI-Native Solutions</a></footer>
+</body></html>

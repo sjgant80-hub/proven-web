@@ -1,0 +1,15 @@
+{
+ "v": 1,
+ "repo": "sjgant80-hub/si-didy-loop",
+ "sha": "740a5d44e5153c01b7edfaf1bb4ccb09980d82ec",
+ "tier": "proven",
+ "score": 1,
+ "killed": 39,
+ "survived": 0,
+ "baselined": 0,
+ "checker": "witness@v0.6",
+ "at": 1787834552346,
+ "expiresAt": 1790426552346,
+ "sig": "IFpX2b5UsUNTEdsO3t2rXyO7oM2hlfb3hpHwN4kHdOOuxuq6StfXqMA44jXkCkPECY4bVIoXtYxLHPES3w37Aw==",
+ "source": "twelve-crawl law 2026-08-27, CI green"
+}

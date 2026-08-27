@@ -1,0 +1,15 @@
+{
+ "v": 1,
+ "repo": "sjgant80-hub/niceassos",
+ "sha": "73fc02289a6a574705fcc8bdfca30aea0b105c8c",
+ "tier": "proven",
+ "score": 1,
+ "killed": 113,
+ "survived": 0,
+ "baselined": 1,
+ "checker": "witness@v0.6",
+ "at": 1787834552346,
+ "expiresAt": 1790426552346,
+ "sig": "0y9GSDJuJ6bHtNsPDWQymVgje4kq7NnOPO4kwE6S7OPvn420DRa2Fe4pgFP2wmHgVtGOnwheWhDg4XuG4SpOCw==",
+ "source": "politePeer coercion kill 2026-08-27, CI green"
+}
